@@ -227,6 +227,8 @@ export default {
       Utils.extend(swiper.params, overwriteParams);
       Utils.extend(swiper.originalParams, overwriteParams);
 
+      swiper.params.initialSlide *= 1;
+
       if (!swiper.params.initialSlide) {
         swiper.virtual.update();
       }
